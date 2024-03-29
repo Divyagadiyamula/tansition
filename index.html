@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello{
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;  
+        }
+        .hello:hover{
+            width: 300px;
+            height: 500px;
+            transform: rotate(180deg);
+        }
+        .lorry{
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;  
+        }
+        .lorry:hover{
+            width: 300px;
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body >
+    <div class="hello">
+    <img height="100" width="100" src="http://www.bikesdirect.com/products/dawes/images/lt-sport-red-xiv-2100.jpg" alt="hi">
+    </div>
+    <br><br>
+    <div class="lorry">
+    <img height="100" width="100" src="https://tse4.mm.bing.net/th?id=OIP.L3mjVxnHUWv4PhO1yv1i1QHaE6&pid=Api&P=0&h=220" alt="hello"></div>
+    
+</body>
+</html> -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <style>
+            body{
+                background-image: url(https://media.istockphoto.com/id/927006044/photo/green-hill-and-asphalt-road-side-view.jpg?s=612x612&w=0&k=20&c=zm6TMTqk5rV6JTaOqig44whgf9H67I6T5nPOPbIqgNI=);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-size:100%  100%;
+            }
+            img{
+                height: 100px;
+                width: 100px;
+              padding-top: 600px;
+              animation-name: example;
+              animation-duration: 2s;
+              animation-fill-mode: forwards;
+              animation-timing-function: linear;
+            }
+            input:checked ~ .car1{
+                transform: translate(120px);
+                transition-property: transform;
+                transition-property: 1s;
+                transition-delay: 4s;
+                
+           }
+
+        </style>
+    </head>
+    <body background="https://media.istockphoto.com/id/927006044/photo/green-hill-and-asphalt-road-side-view.jpg?s=612x612&w=0&k=20&c=zm6TMTqk5rV6JTaOqig44whgf9H67I6T5nPOPbIqgNI=">
+        <input type="radio">start
+        <br>
+        <img src="./icons8-car-48.png" alt="hi" class="car1">
+    </body>
+    </html>
