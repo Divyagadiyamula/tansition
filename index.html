@@ -1,79 +1,55 @@
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .hello{
-            transition-property: width;
-            transition-duration: 2s;
-            transition-timing-function: ease-in;  
-        }
-        .hello:hover{
-            width: 300px;
-            height: 500px;
-            transform: rotate(180deg);
-        }
-        .lorry{
-            transition-property: width;
-            transition-duration: 2s;
-            transition-timing-function: ease-out;  
-        }
-        .lorry:hover{
-            width: 300px;
-            height: 500px;
-        }
+<head><meta charset="utf-8">
+<style> 
+img {
+  width: 100px;
+  height: 100px;
+  transition: width 2s;
+  border-radius: 50%;
+  animation-name: example;
+  animation-duration: 2s;
+}
 
-    </style>
+#div1 {transition-timing-function: linear;}
+img:hover {
+  width: 300px;
+  height: 500px;
+}
+@keyframes example {
+  from {border-radius: 50%;}
+  to {border-radius: 15%;}
+} 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px; bottom: 200px; right: 200px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
 </head>
-<body >
-    <div class="hello">
-    <img height="100" width="100" src="http://www.bikesdirect.com/products/dawes/images/lt-sport-red-xiv-2100.jpg" alt="hi">
-    </div>
-    <br><br>
-    <div class="lorry">
-    <img height="100" width="100" src="https://tse4.mm.bing.net/th?id=OIP.L3mjVxnHUWv4PhO1yv1i1QHaE6&pid=Api&P=0&h=220" alt="hello"></div>
-    
+<body>
+<img id="div1" src="./bloom.jpg" alt="img">
+<img id="div1" src="https://cdn.wallpapersafari.com/88/11/Dqhb8o.jpg" alt="img">
+<img id="div1" src="http://1.bp.blogspot.com/-d7pGxp-6dGY/T0x3vCDE4KI/AAAAAAAAAeQ/RhgyR23xKt0/s1600/My%2BAsiatic%2BLily%2BFlowers%2B1.jpg" alt="img">
+<img id="div1" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-yellow-everlasting-daisy-2-australian-native-flower-geraldine-cote.jpg" alt="img">
+<div></div>
+<br>
 </body>
-</html> -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        
-        <style>
-            body{
-                background-image: url(https://media.istockphoto.com/id/927006044/photo/green-hill-and-asphalt-road-side-view.jpg?s=612x612&w=0&k=20&c=zm6TMTqk5rV6JTaOqig44whgf9H67I6T5nPOPbIqgNI=);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-size:100%  100%;
-            }
-            img{
-                height: 100px;
-                width: 100px;
-              padding-top: 600px;
-              animation-name: example;
-              animation-duration: 2s;
-              animation-fill-mode: forwards;
-              animation-timing-function: linear;
-            }
-            input:checked ~ .car1{
-                transform: translate(120px);
-                transition-property: transform;
-                transition-property: 1s;
-                transition-delay: 4s;
-                
-           }
+</html>
 
-        </style>
-    </head>
-    <body background="https://media.istockphoto.com/id/927006044/photo/green-hill-and-asphalt-road-side-view.jpg?s=612x612&w=0&k=20&c=zm6TMTqk5rV6JTaOqig44whgf9H67I6T5nPOPbIqgNI=">
-        <input type="radio">start
-        <br>
-        <img src="./icons8-car-48.png" alt="hi" class="car1">
-    </body>
-    </html>
+
+
+
+
