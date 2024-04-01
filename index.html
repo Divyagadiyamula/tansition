@@ -1,34 +1,59 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8">
+<html>
+<head><meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transitions</title>
+</head>
 <style> 
-img {
-  width: 100px;
-  height: 100px;
+body{
+  background-image: url(https://wallpapercave.com/wp/wp2844805.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+  img {
+  width: 300px;
+  height: 300px;
   transition: width 2s;
   border-radius: 50%;
   animation-name: example;
   animation-duration: 2s;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
-#div1 {transition-timing-function: linear;}
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: linear;}
+
 img:hover {
   width: 300px;
   height: 500px;
+}
+ #div2:hover{
+  width: 50px;
+  height: 200px;
+ }
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 @keyframes example {
   from {border-radius: 50%;}
   to {border-radius: 15%;}
 } 
-div {
+/* div {
   width: 100px;
   height: 100px;
   background-color: red;
   position: relative;
   animation-name: example;
   animation-duration: 4s;
-}
+} */
 
 @keyframes example {
   0%   {background-color:red; left:0px; top:0px; bottom: 200px; right: 200px;}
@@ -40,11 +65,19 @@ div {
 </style>
 </head>
 <body>
-<img id="div1" src="./bloom.jpg" alt="img">
-<img id="div1" src="https://cdn.wallpapersafari.com/88/11/Dqhb8o.jpg" alt="img">
-<img id="div1" src="http://1.bp.blogspot.com/-d7pGxp-6dGY/T0x3vCDE4KI/AAAAAAAAAeQ/RhgyR23xKt0/s1600/My%2BAsiatic%2BLily%2BFlowers%2B1.jpg" alt="img">
-<img id="div1" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-yellow-everlasting-daisy-2-australian-native-flower-geraldine-cote.jpg" alt="img">
-<div></div>
+  <table class="center">
+    <tr>
+<td><img id="div1" src="./bloom.jpg" alt="img"></td>
+<td><img id="div1" src="https://cdn.wallpapersafari.com/88/11/Dqhb8o.jpg" alt="img"></td>
+<td><img id="div1" src="http://1.bp.blogspot.com/-d7pGxp-6dGY/T0x3vCDE4KI/AAAAAAAAAeQ/RhgyR23xKt0/s1600/My%2BAsiatic%2BLily%2BFlowers%2B1.jpg" alt="img"></td>
+<td><img id="div1" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-yellow-everlasting-daisy-2-australian-native-flower-geraldine-cote.jpg" alt="img"></td>
+</tr>
+<tr>
+<td><img id="div2" src="https://vignette.wikia.nocookie.net/disney/images/2/24/Cinderellanewpic.jpg/revision/latest?cb=20140719135406" alt="img"></td>
+<td><img id="div2" src="https://tse3.mm.bing.net/th?id=OIP.WCObNzV7KTCcCkXPs3YmXwHaHa&pid=Api&P=0&h=220" alt="img"></td>
+<td><img id="div2" src="https://tse2.mm.bing.net/th?id=OIP.GjcwE3Sjl5nSNa30j65_BAHaKj&pid=Api&P=0&h=220" alt="img"></td>
+<td><img id="div2" src="https://lh3.googleusercontent.com/-nhzoZj4BQo4/TwaGhzwN1EI/AAAAAAAACOE/QN5e6bYiGf0/s1600/the_Disney_Princesses_for.jpg" alt="img"></td>
+</tr>
 <br>
 </body>
 </html>
